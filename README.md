@@ -8,4 +8,4 @@ We start with a grid of cells which initially have walls on all of their sides. 
 
 For better visualization, the current cell is drawn red, all other visited cells are drawn blue. The walls are white.
 
-In main.js you can configure the size of the maze as well as the waiting time in ms until the next cell is computed.
+Via the menu above the canvas you can adjust the delay for the computation of the next cell as well as the size of the maze.
