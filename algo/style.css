@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 400px;
+    width: 500px;
+    border: 2px solid white;
+}
+
+.cell {
+    background: rgb(23, 58, 114);
+    border: 1px solid white;
+    position: relative;
+}
+
+.cell.visited::after {
+    content: "✔";
+    color: yellow;
+    font-size: 40px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    inset: 0;
+}
+
+.cell.selected {
+    background: rgb(133, 19, 19);
+}
